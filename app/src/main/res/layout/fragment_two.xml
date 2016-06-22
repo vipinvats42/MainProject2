@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextcustomerno"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editTextcuponcode"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="#80B1BF"
+        />
+
+
+
+    <EditText
+        android:id="@+id/editTextcuponcode"
+
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="number"
+        android:background="#80B1BF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextcuponcode"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Coupon Code"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextcustomerno"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:text="Customer No."
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextcuponcode"
+        android:layout_below="@+id/editTextcuponcode"
+        android:layout_marginTop="38dp"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:background="#001829" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextcustomerno"
+        android:layout_alignLeft="@+id/editTextcustomerno"
+        android:layout_marginBottom="17dp"
+        android:text="Loreum ipsum dolor sit amet"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:background="@drawable/footer"
+        android:gravity="center" />
+
+
+</RelativeLayout>

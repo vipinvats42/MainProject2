@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="23dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="#80B1BF" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="#80B1BF"
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="#80B1BF"/>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:text="Amount"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Balance Point"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Invoice No"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_marginBottom="26dp"
+        android:text="Lorem ipsum dolor sit amet"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/citrus"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:layout_marginLeft="200dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:background="@drawable/payu"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="290dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:background="@drawable/mobikwik"
+        android:text=""
+        android:layout_marginLeft="380dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:background="@drawable/footer"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
